@@ -5,7 +5,7 @@
 ** Login   <chapui_s@epitech.net>
 **
 ** Started on  Wed Nov 20 21:02:19 2013 chapui_s
-** Last update Sun Nov 24 19:07:22 2013 chapui_s
+** Last update Sun Feb  9 17:37:26 2014 chapui_s
 */
 
 #include <unistd.h>
@@ -141,5 +141,5 @@ char		*get_next_line(const int fd)
   }
   free(str_tmp);
   pile->str = return_it(&(pile->str), &to_return);
-  return (to_return);
+  return ((pile->str == NULL) ? (NULL) : (to_return));
 }
